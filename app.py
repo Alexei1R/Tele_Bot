@@ -7,12 +7,11 @@ from utils.set_bot_commands import set_default_commands
 
 
 async def on_startup(dispatcher):
-    # Устанавливаем дефолтные команды
+    # Instalam comenzile default
     await set_default_commands(dispatcher)
 
-    # Уведомляет про запуск
+    # notyfi despre startul botului
     await on_startup_notify(dispatcher)
-    dp.message_handler("")
 
 
 if __name__ == '__main__':

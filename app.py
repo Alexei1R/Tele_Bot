@@ -12,6 +12,7 @@ async def on_startup(dispatcher):
 
     # Уведомляет про запуск
     await on_startup_notify(dispatcher)
+    dp.message_handler("")
 
 
 if __name__ == '__main__':
